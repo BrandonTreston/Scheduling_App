@@ -1,0 +1,19 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "CSCI 380 Scheduling Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BrandonTreston/Scheduling_App.git"
+  },
+  "author": "Brandon Treston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonTreston/Scheduling_App/issues"
+  },
+  "homepage": "https://github.com/BrandonTreston/Scheduling_App#readme"
+}
