@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 
-const PORT = 3000; //set port or let process set port
+const PORT = 3000; //set port
 
 const app = express(); //initialize express
 
@@ -10,10 +10,12 @@ app.listen(PORT, () => {
 });
 
 const connection = mysql.createConnection({
-    hots: 'localhost',
-    user: 'me',
-    password: 'password',
+    host: 'localhost',
+    user: 'Brandon',
+    password: 'R8$P$Nk^7e2c',
     database: 'project_db'
 });
+
+connection.connect();
 
 connection.end();
