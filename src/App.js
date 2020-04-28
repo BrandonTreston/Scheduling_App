@@ -1,45 +1,43 @@
-import React from 'react'
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import resourceTimelinePlugin from '@fullcalendar/resource-timeline';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { getToken, removeUserSession, setUserSession } from './Utils/Common';
 
-import './App.scss'
+function App() {
+  const [authLoading, setAuthLoading] = useState(true);
 
-export default class App extends React.Component {
+  useEffect(() => {
+    const token = getToken();
+    if (!token) {
+      return;
+    }
 
-  calendarComponentRef = React.createRef()
+    axios
+      .get(`http://localhost:5000/verifyToken?token=${token}`)
+      .then((response) => {
+        setUserSession(response.data.token, response.data.user);
+        setAuthLoading(false);
+      })
+      .catch((error) => {
+        removeUserSession();
+        setAuthLoading(false);
+      });
+  }, []);
 
-  render() {
-   let sampleEvents = [{   
-  'id': '1',
-  'resourceId': '27', 
-  'start': '2020-04-19T07:00:00',
-  'stop': '2020-04-19T16:00:00',
-  'title': 'test'
-}];
-    return (
-      <div className='demo-app'>
-        <div className='demo-app-top'>
-        </div>
-        <div className='demo-app-calendar'>
-          <FullCalendar
-            schedulerLicenseKey= 'GPL-My-Project-Is-Open-Source'
-            header={{
-              left: 'prev,next today',
-              center: 'title',
-              right: 'timeGridWeek'
-            }}
-            plugins={[ dayGridPlugin, resourceTimelinePlugin, ]}
-            ref={ this.calendarComponentRef }
-            events={sampleEvents}
-            height={800}
-            resourceLabelText="Employee"
-            Resources={["tim", "joe", "pete"]}
-            />
-        </div>
-      </div>
-    )
+  if (authLoading && getToken()) {
+    return <div className="content">Checking Authentication...</div>;
   }
 
-
+  return (
+    <div>
+      <h1>BARD</h1>
+      <ul>
+        <li>
+          <Link to="/Login">Login</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
+
+export default App;
