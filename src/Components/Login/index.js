@@ -54,7 +54,9 @@ function Login(props) {
         </>
       )}
       <br />
-      <button onTouchEnd={handleLogin} onClick={handleLogin}>{loading ? 'Loading...' : 'Login'}</button>
+      <button onTouchEnd={handleLogin} onClick={handleLogin}>
+        {loading ? 'Loading...' : 'Login'}
+      </button>
       <br />
     </div>
   );

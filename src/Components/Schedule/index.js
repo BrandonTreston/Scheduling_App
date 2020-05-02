@@ -5,13 +5,12 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import Axios from 'axios';
 import './index.scss';
 
-import { getUser, removeUserSession } from '../../Utils/Common';
+import { removeUserSession } from '../../Utils/Common';
 
 import { useHistory } from 'react-router-dom';
 
 function Dashboard(props) {
   let history = useHistory();
-  const user = getUser();
 
   // handle click event of logout button
   const handleLogout = () => {
@@ -21,8 +20,6 @@ function Dashboard(props) {
 
   return (
     <div>
-      Welcome {user.name}!<br />
-      <br />
       <button onTouchEnd={handleLogout} onClick={handleLogout} >Logout</button>
     </div>
   );
