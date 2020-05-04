@@ -35,6 +35,9 @@ function App() {
         <li>
           <Link to="/Login">Login</Link>
         </li>
+        <li>
+          <Link to="/Register">Register</Link>
+        </li>
       </ul>
     </div>
   );

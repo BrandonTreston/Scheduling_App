@@ -26,44 +26,137 @@ app.listen(PORT, () => {
   console.log('Backend server running on port 5000');
 });
 
-app.get('/', (req, res) => {
-  res.send({ message: 'Successfully established connection to backend.' });
+app.post('/users/schedule', (req, res) => {
+  const user = req.body.user;
+  let data;
+  connection.query(
+    'SELECT * FROM  project_db.empschedule WHERE employee_id IN' +
+      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
+      user +
+      '" );',
+    (err, results) => {
+      if (err){throw err;}
+      else{
+        data = results;
+        res.send({data: data});
+      }
+    }
+  );
 });
 
-// const userData = {
-//   userId: "789789",
-//   password: "123456",
-//   name: "Brandon",
-//   username: "Brandon",
-//   isAdmin: true
-// };
 let userData;
+connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
+  if (err) {
+    throw err;
+  } else {
+    userData = results;
+  }
+});
+
 app.post('/users/signin', function (req, res) {
   const user = req.body.username;
   const pwd = req.body.password;
+  let found = false;
+  let userIndex;
 
+  for (let i = 0; i <= userData.length; i++) {
+    try {
+      if (user === userData[i].user_name && pwd === userData[i].user_password) {
+        const token = utils.generateToken(userData[i]);
+        const userObj = utils.getCleanUser(userData[i]);
+        found = true;
+        userIndex = i;
+        return res.json({ user: userObj, token });
+      }
+    } catch (error) {
+      if (found === false) {
+        return res.status(401).json({
+          error: true,
+          message: 'Username or Password is Wrong.',
+        });
+      }
+    }
+  }
+});
+
+app.post('/users/register', function (req, res) {
+  const user = req.body.username;
+  const pwd = req.body.password;
+  const userID = userData.length + 1;
+  const fname = req.body.fname;
+  const lname = req.body.lname;
+  const name = fname + ' ' + lname;
+  const address = req.body.address;
+  const city = req.body.city;
+  const state = req.body.state;
+  const zip = req.body.zip;
+  const email = req.body.email;
+  const phone = req.body.phone;
+
+  let found = false;
+  for (let i = 0; i <= userData.length; i++) {
+    try {
+      if (user === userData[i].user_name) {
+        found = true;
+      }
+    } catch (error) {
+      if (found === true) {
+        return res.status(401).json({
+          error: true,
+          message: 'Username has been taken.',
+        });
+      }
+    }
+  }
   connection.query(
-    'SELECT * FROM project_db.empuser WHERE user_name="' + user + '";',
+    'INSERT INTO project_db.employee VALUES (' +
+      userID +
+      ', "' +
+      fname +
+      '" , "' +
+      lname +
+      '" , "' +
+      address +
+      '" , "' +
+      city +
+      '" , "' +
+      state +
+      '" , "' +
+      zip +
+      '" , "' +
+      email +
+      '" , "' +
+      phone +
+      '");'
+  ),
+    function (err, results) {
+      if (err) {
+        return res.status(401).json({
+          error: true,
+          message: 'Username has been taken.',
+        });
+      }
+    };
+  connection.query(
+    'INSERT INTO project_db.EmpUser VALUES (' +
+      userID +
+      ', "' +
+      user +
+      '" , "' +
+      name +
+      '" , "' +
+      pwd +
+      '", false);'
+  ),
     function (err, results) {
       if (err) {
         throw err;
       }
-      else{
-        userData = results;
-        console.log(results);}
-    }
-  );
-
-  if (user !== userData[0].user_name || pwd !== userData[0].user_password) {
-    return res.status(401).json({
-      error: true,
-      message: 'Username or Password is Wrong.',
-    });
-  }
-
-  const token = utils.generateToken(userData);
-  const userObj = utils.getCleanUser(userData);
-  return res.json({ user: userObj, token });
+    };
+  return res.status(401).json({
+    error: false,
+    message: 'User created, return to login.',
+  });
 });
 
 app.get('/verifyToken', function (req, res) {
@@ -81,13 +174,13 @@ app.get('/verifyToken', function (req, res) {
         message: 'Invalid token.',
       });
 
-    if (user.userId !== userData.userId) {
+    if (user.userId !== userData[i].userId) {
       return res.status(401).json({
         error: true,
         message: 'Invalid user.',
       });
     }
-    var userObj = utils.getCleanUser(userData);
+    var userObj = utils.getCleanUser(userData[i]);
     return res.json({ user: userObj, token });
   });
 });
@@ -108,12 +201,4 @@ app.use(function (req, res, next) {
       next();
     }
   });
-});
-
-app.get('/', (req, res) => {
-  if (!req.user)
-    return res
-      .status(401)
-      .json({ success: false, message: 'Invalid user to access it.' });
-  res.send('Welcome to the Node.js Tutorial! - ' + req.user.name);
 });
