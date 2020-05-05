@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const utils = require('./Utils/utils');
 
-const PORT = 5000 || process.env.PORT; //set port or let process set port
+const PORT = 3001 || process.env.PORT;
 const app = express();
 
 app.use(cors());
@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: 'Brandon',
   password: 'R8$P$Nk^7e2c',
   database: 'project_db',
@@ -23,7 +23,23 @@ const connection = mysql.createConnection({
 connection.connect();
 
 app.listen(PORT, () => {
-  console.log('Backend server running on port 5000');
+  console.log('Backend server running on port 3001');
+});
+
+app.post('/users/isAdmin', (req, res) => {
+  const user = req.body.user;
+  let admin;
+  connection.query(
+    'SELECT isAdmin from project_db.empuser WHERE name = "' + user + '";',
+    (err, results) => {
+      if (err) {
+        throw err;
+      } else {
+        admin = results;
+        res.send({ admin });
+      }
+    }
+  );
 });
 
 app.post('/users/schedule', (req, res) => {
@@ -35,10 +51,11 @@ app.post('/users/schedule', (req, res) => {
       user +
       '" );',
     (err, results) => {
-      if (err){throw err;}
-      else{
+      if (err) {
+        throw err;
+      } else {
         data = results;
-        res.send({data: data});
+        res.send({ data });
       }
     }
   );

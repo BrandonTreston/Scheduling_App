@@ -15,7 +15,7 @@ function Login(props) {
     setError(null);
     setLoading(true);
     axios
-      .post('http://localhost:5000/users/signin', {
+      .post('http://brandontreston.com:3001/users/signin', {
         username: username.value,
         password: password.value,
       })
@@ -62,7 +62,7 @@ function Login(props) {
   );
 }
 
-const useFormInput = (initialValue) => {
+export const useFormInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
 
   const handleChange = (e) => {

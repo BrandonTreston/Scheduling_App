@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FullCalendar from '@fullcalendar/react';
 import timeGridPlugin from '@fullcalendar/timegrid';
 
@@ -7,36 +7,38 @@ import './index.scss';
 
 import { getUser } from '../../Utils/Common';
 
-import Dashboard from '../Dashboard'
+import Dashboard from '../Dashboard';
 import Editor from '../Editor';
 
-export default class Schedule extends React.Component {
-  render() {
-    const user = getUser();
-    let events;
-    
-    Axios.post('http://localhost:5000/users/schedule', {user : user.name})
-    .then(response => {
-      console.log(response.data.data);
-    })
+function Schedule() {
+  const user = getUser();
+  const [events, setEvents] = useState([]);
 
-    // let sampleEvents = [
-    //   {
-    //     id: '2',
-    //     start: '2020-04-19T08:00',
-    //     end: '2020-04-19T10:00',
-    //     title: 'employee5',
-    //   }
-    // ];
+  Axios.post('http://brandontreston.com:3001/users/schedule', { user: user.name }).then(
+    (response) => {
+      // setEvents(response.data.data)
+      let data = response.data;
+      console.log(data.data);
+    }
+  );
 
-    return (
-      <div className="demo-app">
-        <div className="demo-app-top"></div>
-        <div className="demo-app-calendar">
-          <div>
-          <Dashboard/>
-          <Editor/>
-          </div>
+  // let sampleEvents = [
+  //   {
+  //     id: '2',
+  //     start: '2020-04-19T08:00',
+  //     end: '2020-04-19T10:00',
+  //     title: 'employee5',
+  //   }
+  // ];
+
+  return (
+    <div>
+      <div>
+        <div>
+          <Dashboard />
+          <Editor />
+        </div>
+        <div>
           <FullCalendar
             header={{
               left: 'prev,next today',
@@ -48,11 +50,11 @@ export default class Schedule extends React.Component {
             plugins={[timeGridPlugin]}
             events={events}
             height={800}
-            resourceLabelText="Employee"
-            Resources={['tim', 'joe', 'pete']}
           />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default Schedule;

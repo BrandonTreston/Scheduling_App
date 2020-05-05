@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import Schedule from './Components/Schedule';
 import Login from './Components/Login';
+import Register from './Components/Register';
 import * as serviceWorker from './serviceWorker';
 import PrivateRoute from './Utils/PrivateRoute';
 import PublicRoute from './Utils/PublicRoute';
@@ -21,6 +22,9 @@ ReactDOM.render(
         </PrivateRoute>
         <PublicRoute path="/Login">
           <Login />
+        </PublicRoute>
+        <PublicRoute path="/Register">
+          <Register />
         </PublicRoute>
       </Switch>
     </BrowserRouter>

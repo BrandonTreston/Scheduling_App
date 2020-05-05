@@ -1,28 +1,39 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import {useFormInput} from '../Login';
 
 function Register(props) {
   const [loading, setLoading] = useState(false);
-  const username = useFormInput('');
-  const password = useFormInput('');
-  const fname = useFormInput('');
-  const lname = useFormInput('');
-  const address = useFormInput('');
-  const city = useFormInput('');
-  const state = useFormInput('');
-  const zip = useFormInput('');
-  const email = useFormInput('');
-  const phone = useFormInput('');
+  const username = useFormInput(null);
+  const password = useFormInput(null);
+  const fname = useFormInput(null);
+  const lname = useFormInput(null);
+  const address = useFormInput(null);
+  const city = useFormInput(null);
+  const state = useFormInput(null);
+  const zip = useFormInput(null);
+  const email = useFormInput(null);
+  const phone = useFormInput(null);
   const [error, setError] = useState(null);
-  let history = useHistory();
 
   // handle button click of login form
   const handleSignup = () => {
+    if(username.value !== null &&
+      password.value !== null &&
+      fname.value !== null &&
+      lname.value !== null &&
+      address.value !== null &&
+      city.value !== null &&
+      state.value !== null &&
+      zip.value !== null &&
+      email.value !== null &&
+      phone.value !== null      
+      ){
     setError(null);
     setLoading(true);
     axios
-      .post('http://localhost:5000/users/register', {
+      .post('http://brandontreston.com:3001/users/register', {
         username: username.value,
         password: password.value,
         fname: fname.value,
@@ -36,7 +47,6 @@ function Register(props) {
       })
       .then((response) => {
         setLoading(false);
-        history.push('/login');
       })
       .catch((error) => {
         setLoading(false);
@@ -44,7 +54,9 @@ function Register(props) {
           setError(error.response.data.message);
         else setError('Something went wrong. Please try again later.');
       });
-  };
+  }
+  else{setError('All fields must be filled.')}
+};
 
   return (
     <div>
@@ -54,52 +66,52 @@ function Register(props) {
       <div>
         First Name
         <br />
-        <input type="text" {...fname} autoComplete="new-password" />
+        <input required type="text" {...fname} maxLength="30" autoComplete="new-password" />
       </div>
       <div>
         Last Name
         <br />
-        <input type="text" {...lname} autoComplete="new-password" />
+        <input required type="text" {...lname} maxLength="30" autoComplete="new-password" />
       </div>
       <div>
         Address
         <br />
-        <input type="text" {...address} autoComplete="new-password" />
+        <input required type="text" {...address} maxLength="30" autoComplete="new-password" />
       </div>
       <div>
         City
         <br />
-        <input type="text" {...city} autoComplete="new-password" />
+        <input required type="text" {...city} maxLength="30" autoComplete="new-password" />
       </div>
       <div>
         State
         <br />
-        <input type="text" {...state} autoComplete="new-password" />
+        <input required type="text" {...state} maxLength="2" autoComplete="new-password" />
       </div>
       <div>
         Zip Code
         <br />
-        <input type="text" {...zip} autoComplete="new-password" />
+        <input required type="number" maxLength="5" {...zip} autoComplete="new-password" />
       </div>
       <div>
         Email
         <br />
-        <input type="text" {...email} autoComplete="new-password" />
+        <input required type="email" {...email} autoComplete="new-password" />
       </div>
       <div>
         Phone Number
         <br />
-        <input type="text" {...phone} autoComplete="new-password" />
+        <input required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxLength="10" type="tel" {...phone} autoComplete="new-password" />
       </div>
       <div>
         New Username
         <br />
-        <input type="text" {...username} autoComplete="new-password" />
+        <input required type="text" {...username} maxLength="30" autoComplete="new-password" />
       </div>
       <div style={{ marginTop: 10 }}>
         New Password
         <br />
-        <input type="password" {...password} autoComplete="new-password" />
+        <input required type="password" {...password} maxLength="30" autoComplete="new-password" />
       </div>
       {error && (
         <>
@@ -115,17 +127,5 @@ function Register(props) {
     </div>
   );
 }
-
-const useFormInput = (initialValue) => {
-  const [value, setValue] = useState(initialValue);
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
-  return {
-    value,
-    onChange: handleChange,
-  };
-};
 
 export default Register;

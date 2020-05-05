@@ -13,7 +13,7 @@ function App() {
     }
 
     axios
-      .get(`http://localhost:5000/verifyToken?token=${token}`)
+      .get(`http://brandontreston.com:3001/verifyToken?token=${token}`)
       .then((response) => {
         setUserSession(response.data.token, response.data.user);
         setAuthLoading(false);
