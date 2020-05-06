@@ -18,18 +18,8 @@ function Schedule() {
     (response) => {
       // setEvents(response.data.data)
       let data = response.data;
-      console.log(data.data);
     }
   );
-
-  // let sampleEvents = [
-  //   {
-  //     id: '2',
-  //     start: '2020-04-19T08:00',
-  //     end: '2020-04-19T10:00',
-  //     title: 'employee5',
-  //   }
-  // ];
 
   return (
     <div>

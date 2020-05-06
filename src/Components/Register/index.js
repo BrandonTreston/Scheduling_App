@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 import {useFormInput} from '../Login';
 
-function Register(props) {
+function Register() {
   const [loading, setLoading] = useState(false);
   const username = useFormInput(null);
   const password = useFormInput(null);

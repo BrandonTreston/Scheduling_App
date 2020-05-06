@@ -61,6 +61,61 @@ app.post('/users/schedule', (req, res) => {
   );
 });
 
+app.get("/users/listEmployees", (req, res) => {
+  let data;
+  connection.query('SELECT name FROM project_db.empuser', (err, results) => {
+    if (err){
+      throw err;
+    } else{
+      data = results;
+      console.log(data);
+      res.send(data);
+    }
+  })
+});
+
+app.post('/users/submit', (req, res) => {
+  const employee = req.body.employee;
+  const start = req.body.start;
+  const end = req.body.end;
+  const title = req.body.title;
+  let employeeID;
+  connection.query(
+    'SELECT employee_id FROM  project_db.empschedule WHERE employee_id IN' +
+      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
+      employee +
+      '" );',
+    (err, results) => {
+      if (err) {
+        throw err;
+      } else {
+        employeeID = results[0].employee_id;
+          connection.query(
+            'Insert into project_db.empschedule (employee_id, start, end, title) Values (' +
+              employeeID +
+              ', "' +
+              start +
+              '", "' +
+              end +
+              '", "' +
+              title +
+              '");',
+            (err) => {
+              if (err) {
+                throw err;
+              } else {
+                res.send({
+                  message: 'Event added to ' + employee + "'s schedule",
+                });
+              }
+            }
+          );
+        
+      }
+    }
+  );
+});
+
 let userData;
 connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
   if (err) {
