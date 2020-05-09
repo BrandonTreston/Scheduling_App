@@ -3,10 +3,9 @@ import './index.scss';
 
 import Axios from 'axios';
 import { useFormInput } from '../Login';
-import { getUser } from '../../Utils/Common';
 
 function Editor() {
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,21 +16,11 @@ function Editor() {
     };
     fetchData();
   }, []);
-  
+
   const employee = useFormInput('');
   const start = useFormInput('');
   const end = useFormInput('');
   const title = useFormInput('');
-  const user = getUser();
-  const [admin, setAdmin] = useState(false);
-
-  Axios.post('http://brandontreston.com:3001/users/isAdmin', {
-    user: user.name,
-  }).then((response) => {
-    if (response.data.admin[0].isAdmin === 1) {
-      setAdmin(true);
-    }
-  });
 
   const submit = () => {
     if (
@@ -52,42 +41,48 @@ function Editor() {
       alert('All fields must be filled in.');
     }
   };
+ 
+  if (users.length === 0) {
+    return null;
+  } //wait for API call to finish
 
-  if (admin) {
-    return (
+  return (
+    <div>
+      <h4>Supervisor View</h4>
       <div className="editor">
-        <h4>Supervisor View</h4>
-        <span>Schedule New Event</span>
-        <br />
-        <form>
-          <label htmlFor="employee">Employee: </label>
-          <select {...employee}>
-            {users.map(user => (
-              <option   value={user.name} key = {user.name}>
-                {user.name}
-              </option>
-            ))}
-          </select>
-          <br />
-          <label htmlFor="dateselector">Start Date and Time: </label>
-          <input type="datetime-local" {...start} id="startdateselector" />
-          <br />
-          <label htmlFor="dateselector">End Date and Time: </label>
-          <input type="datetime-local" {...end} id="enddateselector" />
-          <br />
-          <label htmlFor="title">Description: </label>
-          <input type="text" {...title} id="title" />
-          <br />
-          <button onClick={submit} id="submit">
-            Submit
-          </button>
-          <input type="reset" id="reset" />
-        </form>
+        <div>
+        <h5>Schedule New Event</h5>
+          <form id="addEvent">
+            <label htmlFor="employee">Employee: </label>
+            <select {...employee}>
+              <option>Select Employee</option>
+              {users.map((user) => (
+                <option value={user.name} key={user.name}>
+                  {user.name}
+                </option>
+              ))}
+            </select>
+            <br />
+            <label htmlFor="dateselector">Start Date and Time: </label>
+            <input type="datetime-local" {...start} id="startdateselector" />
+            <br />
+            <label htmlFor="dateselector">End Date and Time: </label>
+            <input type="datetime-local" {...end} id="enddateselector" />
+            <br />
+            <label htmlFor="title">Description: </label>
+            <input type="text" {...title} id="title" />
+            <br />
+            <button onClick={submit} id="submit">
+              Submit
+            </button>
+            <input type="reset" id="reset" />
+          </form>
+        </div>
+
+       
       </div>
-    );
-  } else {
-    return <br />;
-  }
+    </div>
+  );
 }
 
 export default Editor;

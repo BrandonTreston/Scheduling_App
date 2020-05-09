@@ -3,6 +3,21 @@
 @import '~@fullcalendar/timeline/main.css';
 @import '~@fullcalendar/timegrid/main.css';
 
-button{
-    cursor: pointer;
+#deleteEvent{
+    position: absolute;
+    left: 47%;
+    top: 100%;
+    background-color: #76828e;
+    color:#fff;
+    z-index: 1;
+    padding: 5px;
+}
+#deleteEvent button{
+    margin: 0px 5px
+}
+.visible{
+    display: block;
+}
+.notVisible{
+    display: none;
 }

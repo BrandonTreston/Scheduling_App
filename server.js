@@ -5,7 +5,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const utils = require('./Utils/utils');
-const nodemailer = require('nodemailer');
 
 const PORT = 3001 || process.env.PORT;
 const app = express();
@@ -26,33 +25,6 @@ connection.connect();
 app.listen(PORT, () => {
   console.log('Backend server running on port 3001');
 });
-
-var transport = nodemailer.createTransport({
-  host: 'smtp.mailtrap.io',
-  port: 2525,
-  auth: {
-    user: '7d340559c01458',
-    pass: '1c455e8b3afac6',
-  },
-});
-
-function sendEmail(to) {
-  const message = {
-    from: 'BARD.Scheduler@brandontreston.com',
-    to: to,
-    subject: 'New Schedule!',
-    text: 'Your schedule has been updated!',
-  };
-  transport.sendMail(message, function (err, info) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log(info);
-    }
-  });
-}
-
-let userData;
 
 app.post('/users/isAdmin', (req, res) => {
   const user = req.body.user;
@@ -89,61 +61,17 @@ app.post('/users/schedule', (req, res) => {
   );
 });
 
-app.post('/users/getUserSchedule', (req, res) => {
-  const user = req.body.employee;
-  let data;
-  connection.query(
-    'SELECT * FROM  project_db.empschedule WHERE employee_id IN' +
-      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
-      user +
-      '" );',
-    (err, results) => {
-      if (err) {
-        throw err;
-      } else {
-        data = results;
-        res.send({ data });
-      }
-    }
-  );
-});
-
-app.post('/users/deleteEvent', (req, res) => {
-  const id = req.body.id;
-  const queryString =
-    'SELECT email FROM project_db.employee WHERE employee_id IN' +
-    '(SELECT employee_id FROM project_db.empschedule WHERE id = ' +
-    id +
-    ');';
-  connection.query(queryString, (err, results) => {
-    if (err) {
-      throw err;
-    } else {
-      sendEmail(results[0].email);
-    }
-  });
-  connection.query(
-    'DELETE FROM project_db.empschedule WHERE id =' + id + ';',
-    (err, results) => {
-      if (err) {
-        throw err;
-      } else {
-        res.send({ message: 'Deleted event Successfully!' });
-      }
-    }
-  );
-});
-
-app.get('/users/listEmployees', (req, res) => {
+app.get("/users/listEmployees", (req, res) => {
   let data;
   connection.query('SELECT name FROM project_db.empuser', (err, results) => {
-    if (err) {
+    if (err){
       throw err;
-    } else {
+    } else{
       data = results;
+      console.log(data);
       res.send(data);
     }
-  });
+  })
 });
 
 app.post('/users/submit', (req, res) => {
@@ -152,55 +80,43 @@ app.post('/users/submit', (req, res) => {
   const end = req.body.end;
   const title = req.body.title;
   let employeeID;
-
-  const queryString =
-    'SELECT email FROM project_db.employee WHERE employee_id IN' +
-    '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
-    employee +
-    '");';
-
-  connection.query(queryString, (err, results) => {
-    if (err) {
-      throw err;
-    } else {
-      sendEmail(results[0].email);
-    }
-  });
-
   connection.query(
-    'SELECT employee_id FROM project_db.empuser WHERE name = "' +
+    'SELECT employee_id FROM  project_db.empschedule WHERE employee_id IN' +
+      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
       employee +
-      '";',
+      '" );',
     (err, results) => {
       if (err) {
         throw err;
       } else {
         employeeID = results[0].employee_id;
-        connection.query(
-          'Insert into project_db.empschedule (employee_id, start, end, title) Values (' +
-            employeeID +
-            ', "' +
-            start +
-            '", "' +
-            end +
-            '", "' +
-            title +
-            '");',
-          (err) => {
-            if (err) {
-              throw err;
-            } else {
-              res.send({
-                message: 'Event added to ' + employee + "'s schedule",
-              });
+          connection.query(
+            'Insert into project_db.empschedule (employee_id, start, end, title) Values (' +
+              employeeID +
+              ', "' +
+              start +
+              '", "' +
+              end +
+              '", "' +
+              title +
+              '");',
+            (err) => {
+              if (err) {
+                throw err;
+              } else {
+                res.send({
+                  message: 'Event added to ' + employee + "'s schedule",
+                });
+              }
             }
-          }
-        );
+          );
+        
       }
     }
   );
 });
 
+let userData;
 connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
   if (err) {
     throw err;
@@ -309,13 +225,6 @@ app.post('/users/register', function (req, res) {
         throw err;
       }
     };
-  connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
-    if (err) {
-      throw err;
-    } else {
-      userData = results; //update the user list on the backend server
-    }
-  });
   return res.status(401).json({
     error: false,
     message: 'User created, return to login.',
@@ -337,13 +246,13 @@ app.get('/verifyToken', function (req, res) {
         message: 'Invalid token.',
       });
 
-    if (user.userId !== userData.userId) {
+    if (user.userId !== userData[i].userId) {
       return res.status(401).json({
         error: true,
         message: 'Invalid user.',
       });
     }
-    var userObj = utils.getCleanUser(userData);
+    var userObj = utils.getCleanUser(userData[i]);
     return res.json({ user: userObj, token });
   });
 });

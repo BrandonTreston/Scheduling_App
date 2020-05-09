@@ -9,8 +9,7 @@ function Dashboard(props) {
 
   const handleLogout = () => {
     removeUserSession();
-    history.push('/');
-    window.location.reload();
+    history.push('/login');
   };
 
   return (
