@@ -31,3 +31,12 @@
     width:25%;
 }
 
+@media only screen and (max-width : 720px){
+#calendarContainer{
+    flex-flow: column;
+}
+#sidebar{
+    background-color: #252525;
+    width:100%;
+}
+}
