@@ -29,16 +29,11 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>BARD</h1>
-      <ul>
-        <li>
-          <Link to="/Login">Login</Link>
-        </li>
-        <li>
-          <Link to="/Register">Register</Link>
-        </li>
-      </ul>
+    <div id="container">
+        <h1 id='mainTitle'>BARD</h1>
+        <h4 id='subtitle'>Timesheet and Scheuduling Application</h4>
+            <Link to="/Login">Login</Link>
+            <Link to="/Register">Register</Link>
     </div>
   );
 }

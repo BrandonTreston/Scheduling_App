@@ -21,3 +21,13 @@
 .notVisible{
     display: none;
 }
+#calendarContainer{
+    padding:5px;
+    display: flex;
+    flex-flow: row;
+}
+#sidebar{
+    background-color: #252525;
+    width:25%;
+}
+

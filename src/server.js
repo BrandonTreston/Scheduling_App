@@ -228,7 +228,7 @@ app.post('/users/signin', function (req, res) {
       if (found === false) {
         return res.status(401).json({
           error: true,
-          message: 'Username or Password is Wrong.',
+          message: 'Incorrect username or password.',
         });
       }
     }

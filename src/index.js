@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import Schedule from './Components/Schedule';
 import Login from './Components/Login';
@@ -12,7 +12,7 @@ import PublicRoute from './Utils/PublicRoute';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path="/">
           <App />
@@ -27,7 +27,7 @@ ReactDOM.render(
           <Register />
         </PublicRoute>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

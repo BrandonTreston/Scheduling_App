@@ -1,3 +1,20 @@
-button{
-    cursor: pointer;
+#login {
+  display: flex;
+  justify-content: center;
+}
+#loginform {
+  background-color: #2a2a30;
+  padding: 20px;
+}
+#login input {
+  background-color: #181a1b;
+  border: inset #656c6e;
+  color: #fff;
+}
+button {
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }

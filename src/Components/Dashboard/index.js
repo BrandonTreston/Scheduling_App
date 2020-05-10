@@ -14,9 +14,8 @@ function Dashboard(props) {
   };
 
   return (
-    <div>
-      Welcome {user.name}!<br />
-      <br />
+    <div id='dashboard'>
+      <h4 style={{'margin-top': 0}}>Welcome {user.name}!</h4>
       <button onTouchEnd={handleLogout} onClick={handleLogout}>
         Logout
       </button>

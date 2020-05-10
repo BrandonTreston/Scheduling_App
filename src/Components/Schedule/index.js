@@ -71,62 +71,57 @@ function Schedule() {
     }).then((response) => {
       alert(response.data.message);
       setVisibility(false);
+      window.location.reload();
     });
   };
 
   if (admin) {
     return (
-      <div>
-        <div>
-          <div>
-            <Dashboard />
-            <Editor />
-          </div>
-          <div>
-            <div>
-              <form>
-                <h5>View Employee Schedule</h5>
-                <select {...employee}>
-                  <option>Select Employee</option>
-                  {users.map((user) => (
-                    <option value={user.name} key={user.name}>
-                      {user.name}
-                    </option>
-                  ))}
-                </select>
-              </form>
-              <button onClick={getSchedule}>Submit</button>
-            </div>
-            <FullCalendar
-              header={{
-                left: 'prev,next today',
-                center: 'title',
-                right: 'timeGridWeek, timeGridDay',
-              }}
-              eventClick={function (info) {
-                if (admin === true) {
-                  let eventObj = info.event;
-                  setVisibility(true);
-                  selectEvent(eventObj.id);
-                }
-              }}
-              allDaySlot={false}
-              defaultView="timeGridWeek"
-              plugins={[timeGridPlugin]}
-              events={events}
-              height={800}
-            />
-            <div
-              id="deleteEvent"
-              className={visible ? 'visible' : 'notVisible'}
-            >
-              <span>Delete this event?</span>
-              <br />
-              <form>
-                <button onClick={() => deleteEvent()}>Delete</button>
-                <button onClick={() => setVisibility(false)}>Cancel</button>
-              </form>
-            </div>
+      <div id="calendarContainer">
+        <div id="sidebar">
+          <Dashboard />
+          <Editor />
+          <form>
+            <h5>View Employee Schedule</h5>
+            <select {...employee}>
+              <option>Select Employee</option>
+              {users.map((user) => (
+                <option value={user.name} key={user.name}>
+                  {user.name}
+                </option>
+              ))}
+            </select>
+            <br />
+            <button onClick={getSchedule}>Submit</button>
+          </form>
+        </div>
+        <div id="calendar">
+          <FullCalendar
+            header={{
+              left: 'prev,next today',
+              center: 'title',
+              right: 'timeGridWeek, timeGridDay',
+            }}
+            eventClick={function (info) {
+              if (admin === true) {
+                let eventObj = info.event;
+                setVisibility(true);
+                selectEvent(eventObj.id);
+              }
+            }}
+            allDaySlot={false}
+            defaultView="timeGridWeek"
+            plugins={[timeGridPlugin]}
+            events={events}
+            height={800}
+          />
+          <div id="deleteEvent" className={visible ? 'visible' : 'notVisible'}>
+            <span>Delete this event?</span>
+            <br />
+            <form>
+              <button onClick={() => deleteEvent()}>Delete</button>
+              <button onClick={() => setVisibility(false)}>Cancel</button>
+            </form>
           </div>
         </div>
       </div>
@@ -134,7 +129,7 @@ function Schedule() {
   } else {
     return (
       <div>
-        <div>
+        <div id="appContainer">
           <div>
             <Dashboard />
           </div>
@@ -149,7 +144,7 @@ function Schedule() {
               defaultView="timeGridWeek"
               plugins={[timeGridPlugin]}
               events={events}
-              height={800}
+              height={750}
             />
           </div>
         </div>
