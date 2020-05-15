@@ -81,7 +81,6 @@ function Schedule() {
         <div id="sidebar">
           <Dashboard />
           <Editor />
-          <form>
             <h5>View Employee Schedule</h5>
             <select {...employee}>
               <option>Select Employee</option>
@@ -93,7 +92,6 @@ function Schedule() {
             </select>
             <br />
             <button onClick={getSchedule}>Submit</button>
-          </form>
         </div>
         <div id="calendar">
           <FullCalendar

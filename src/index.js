@@ -12,7 +12,7 @@ import PublicRoute from './Utils/PublicRoute';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter hashType='noslash'>
       <Switch>
         <Route exact path="/">
           <App />
