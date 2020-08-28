@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { setUserSession } from '../../Utils/Common';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './index.scss';
 
 function Login(props) {
@@ -62,8 +62,8 @@ function Login(props) {
           <button onTouchEnd={handleLogin} onClick={handleLogin}>
             {loading ? 'Loading...' : 'Login'}
           </button>
-          <button>
-            <Link to="/">Back</Link>
+          <button onClick={() => window.location= '/#Bard'}>
+          Back  
           </button>
           <br />
         </div>

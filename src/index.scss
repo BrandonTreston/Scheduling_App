@@ -20,9 +20,6 @@ html{
 table, th, td{
   border-color: #4a5052 !important;
 }
-body{
-  margin: 5px;
-}
 
 #container a:hover{
   color:#fff;
@@ -49,3 +46,8 @@ body{
   text-align: center;
 }
 
+#backButton{
+  position: absolute;
+  top: 90%;
+  left: 1%
+}

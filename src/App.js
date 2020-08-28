@@ -34,6 +34,8 @@ function App() {
         <h4 id='subtitle'>Timesheet and Scheuduling Application</h4>
             <Link to="/Login">Login</Link>
             <Link to="/Register">Register</Link>
+            <Link to ='/GitHub'>View on Gitub</Link>
+            <span id='backButton'><Link to='/'>Back</Link></span>
     </div>
   );
 }
