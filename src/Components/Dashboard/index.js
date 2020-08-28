@@ -9,7 +9,7 @@ function Dashboard(props) {
 
   const handleLogout = () => {
     removeUserSession();
-    history.push('/');
+    history.push('/Bard');
     window.location.reload();
   };
 
