@@ -2,6 +2,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # BARD Scheduler
 
+## demo Supervisor user
+User: JConnor
+PW: 5kyN3t2
+
+## demo Normal user
+User: SGoody
+PW: SGR0x!
+
 Fullstack Implementation of MySQL, React, Node.js, Express to create a scheduling application. Nodemailer utilized in creating email notification system for changes made to the schedule.
 
 [BARD Scheduler](http://brandontreston.com:81)
