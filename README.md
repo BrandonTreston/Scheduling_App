@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # BARD Scheduler
 
-## demo Supervisor user
+### demo Supervisor user
 User: JConnor
 PW: 5kyN3t2
 
-## demo Normal user
+### demo Normal user
 User: SGoody
 PW: SGR0x!
 
