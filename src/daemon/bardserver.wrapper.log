@@ -1,0 +1,4 @@
+2020-09-02 16:24:03 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-02 16:24:03 - Started 17016
+2020-09-02 16:25:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-02 16:25:15 - Started 8184

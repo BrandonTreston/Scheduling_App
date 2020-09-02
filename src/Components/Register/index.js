@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useFormInput } from '../Login';
-import { Link } from 'react-router-dom';
 import './index.scss';
 
 function Register() {
@@ -181,8 +180,8 @@ function Register() {
         <button onTouchEnd={handleSignup} onClick={handleSignup}>
           {loading ? 'Loading...' : 'Submit'}
         </button>
-        <button>
-          <Link to="/">Home</Link>
+        <button onClick={() => window.location= '/#Bard'}>
+        Back
         </button>
         <br />
       </div>

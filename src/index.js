@@ -4,6 +4,7 @@ import './index.scss';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import Schedule from './Components/Schedule';
+import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import * as serviceWorker from './serviceWorker';
@@ -12,11 +13,14 @@ import PublicRoute from './Utils/PublicRoute';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter hashType="noslash">
       <Switch>
         <Route exact path="/">
-          <App />
+          <Home />
         </Route>
+        <PublicRoute path="/Bard">
+          <App />
+        </PublicRoute>
         <PrivateRoute path="/Schedule">
           <Schedule />
         </PrivateRoute>
@@ -26,6 +30,14 @@ ReactDOM.render(
         <PublicRoute path="/Register">
           <Register />
         </PublicRoute>
+        <Route
+          path="/GitHub"
+          component={() => {
+            window.location.href =
+              'https://github.com/BrandonTreston/Scheduling_App';
+            return null;
+          }}
+        />
       </Switch>
     </HashRouter>
   </React.StrictMode>,
