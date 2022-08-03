@@ -177,12 +177,14 @@ function Register() {
           </>
         )}
         <br />
-        <button onTouchEnd={handleSignup} onClick={handleSignup}>
+        <div id='buttonContainer'>
+        <button className='registerButton' onTouchEnd={handleSignup} onClick={handleSignup}>
           {loading ? 'Loading...' : 'Submit'}
         </button>
-        <button onClick={() => window.location= '/#Bard'}>
+        <button className='registerButton' onClick={() => window.location= '/#Bard'}>
         Back
         </button>
+        </div>
         <br />
       </div>
     </div>

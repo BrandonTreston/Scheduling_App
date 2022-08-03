@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import timeGridPlugin from '@fullcalendar/timegrid';
+import { useHistory } from 'react-router-dom';
 
 import Axios from 'axios';
 import './index.scss';
@@ -18,6 +19,7 @@ function Schedule() {
   const [users, setUsers] = useState([]);
   const [visible, setVisibility] = useState(false);
   const [selectedEvent, selectEvent] = useState();
+  let history = useHistory();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -77,11 +79,13 @@ function Schedule() {
 
   if (admin) {
     return (
-      <div id="calendarContainer">
+      <div style={{margin:5}}>
+        <div id="calendarContainer">
         <div id="sidebar">
           <Dashboard />
           <Editor />
-            <h5>View Employee Schedule</h5>
+          <div id='employeeSchedule'>
+          <h5>View Employee Schedule</h5>
             <select {...employee}>
               <option>Select Employee</option>
               {users.map((user) => (
@@ -92,6 +96,7 @@ function Schedule() {
             </select>
             <br />
             <button onClick={getSchedule}>Submit</button>
+          </div>
         </div>
         <div id="calendar">
           <FullCalendar
@@ -123,10 +128,10 @@ function Schedule() {
           </div>
         </div>
       </div>
+      </div>
     );
   } else {
     return (
-      <div>
         <div id="appContainer">
           <div>
             <Dashboard />
@@ -146,7 +151,6 @@ function Schedule() {
             />
           </div>
         </div>
-      </div>
     );
   }
 }

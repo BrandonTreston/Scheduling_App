@@ -1,20 +1,32 @@
 #login {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
 }
 #loginform {
-  background-color: #2a2a30;
+  background-color: #242220;
   padding: 20px;
 }
+#loginform h3{
+  text-align: center
+}
 #login input {
-  background-color: #181a1b;
+  background-color: #00000000;
   border: inset #656c6e;
   color: #fff;
+  border: 1px solid #929292;
 }
-button {
-  margin-right: 10px;
+.loginButton{
+  background-color: #242220;
+  color: #929292;
+  border: 1px solid #929292;
+  letter-spacing: 3px;
 }
 a {
   text-decoration: none;
   color: black;
+}
+#buttonContainer{
+  display:flex;
+  justify-content: space-evenly;
 }

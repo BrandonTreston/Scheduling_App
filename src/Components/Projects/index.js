@@ -10,7 +10,7 @@ function Projects() {
         <Row className="projects">
           <Col>
             <Project
-              href="http://brandontreston.com:81/#Bard/"
+              href="http://brandontreston.com/#Bard/"
               text="BARD"
               src={require('../../assets/Project4.png')}
             />

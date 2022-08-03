@@ -6,8 +6,9 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const utils = require('./Utils/utils');
 const nodemailer = require('nodemailer');
+const { isEmpty } = require('lodash');
 
-const PORT = 3001 || process.env.PORT;
+const PORT = 3002 || process.env.PORT;
 const app = express();
 
 app.use(cors());
@@ -16,15 +17,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const connection = mysql.createConnection({
   host: '127.0.0.1',
-  user: 'brandon',
-  password: 'yH5**s45ih0yDn83',
-  database: 'project_db',
+  user: 'root',
+  password: 'yH5**s45ih0yDn83', //DEV
+  // password: '69Wolftheeth', //PROD
+  database: 'brandon',
 });
 
 connection.connect();
 
 app.listen(PORT, () => {
-  console.log('Backend server running on port 3001');
+  console.log('Backend server running on port 3002');
 });
 
 var transport = nodemailer.createTransport({
@@ -58,7 +60,7 @@ app.post('/users/isAdmin', (req, res) => {
   const user = req.body.user;
   let admin;
   connection.query(
-    'SELECT isAdmin from project_db.empuser WHERE name = "' + user + '";',
+    'SELECT isAdmin from brandon.empuser WHERE name = "' + user + '";',
     (err, results) => {
       if (err) {
         throw err;
@@ -74,8 +76,8 @@ app.post('/users/schedule', (req, res) => {
   const user = req.body.user;
   let data;
   connection.query(
-    'SELECT * FROM  project_db.empschedule WHERE employee_id IN' +
-      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
+    'SELECT * FROM  brandon.empschedule WHERE employee_id IN' +
+      '(SELECT employee_id FROM brandon.empuser WHERE name = "' +
       user +
       '" );',
     (err, results) => {
@@ -93,8 +95,8 @@ app.post('/users/getUserSchedule', (req, res) => {
   const user = req.body.employee;
   let data;
   connection.query(
-    'SELECT * FROM  project_db.empschedule WHERE employee_id IN' +
-      '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
+    'SELECT * FROM  brandon.empschedule WHERE employee_id IN' +
+      '(SELECT employee_id FROM brandon.empuser WHERE name = "' +
       user +
       '" );',
     (err, results) => {
@@ -111,8 +113,8 @@ app.post('/users/getUserSchedule', (req, res) => {
 app.post('/users/deleteEvent', (req, res) => {
   const id = req.body.id;
   const queryString =
-    'SELECT email FROM project_db.employee WHERE employee_id IN' +
-    '(SELECT employee_id FROM project_db.empschedule WHERE id = ' +
+    'SELECT email FROM brandon.employee WHERE employee_id IN' +
+    '(SELECT employee_id FROM brandon.empschedule WHERE id = ' +
     id +
     ');';
   connection.query(queryString, (err, results) => {
@@ -123,7 +125,7 @@ app.post('/users/deleteEvent', (req, res) => {
     }
   });
   connection.query(
-    'DELETE FROM project_db.empschedule WHERE id =' + id + ';',
+    'DELETE FROM brandon.empschedule WHERE id =' + id + ';',
     (err, results) => {
       if (err) {
         throw err;
@@ -136,7 +138,7 @@ app.post('/users/deleteEvent', (req, res) => {
 
 app.get('/users/listEmployees', (req, res) => {
   let data;
-  connection.query('SELECT name FROM project_db.empuser', (err, results) => {
+  connection.query('SELECT name FROM brandon.empuser', (err, results) => {
     if (err) {
       throw err;
     } else {
@@ -154,8 +156,8 @@ app.post('/users/submit', (req, res) => {
   let employeeID;
 
   const queryString =
-    'SELECT email FROM project_db.employee WHERE employee_id IN' +
-    '(SELECT employee_id FROM project_db.empuser WHERE name = "' +
+    'SELECT email FROM brandon.employee WHERE employee_id IN' +
+    '(SELECT employee_id FROM brandon.empuser WHERE name = "' +
     employee +
     '");';
 
@@ -168,7 +170,7 @@ app.post('/users/submit', (req, res) => {
   });
 
   connection.query(
-    'SELECT employee_id FROM project_db.empuser WHERE name = "' +
+    'SELECT employee_id FROM brandon.empuser WHERE name = "' +
       employee +
       '";',
     (err, results) => {
@@ -177,7 +179,7 @@ app.post('/users/submit', (req, res) => {
       } else {
         employeeID = results[0].employee_id;
         connection.query(
-          'Insert into project_db.empschedule (employee_id, start, end, title) Values (' +
+          'Insert into brandon.empschedule (employee_id, start, end, title) Values (' +
             employeeID +
             ', "' +
             start +
@@ -201,7 +203,7 @@ app.post('/users/submit', (req, res) => {
   );
 });
 
-connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
+connection.query('SELECT * FROM brandon.empuser;', (err, results) => {
   if (err) {
     throw err;
   } else {
@@ -212,33 +214,37 @@ connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
 app.post('/users/signin', function (req, res) {
   const user = req.body.username;
   const pwd = req.body.password;
+  const bcrypt = require('bcrypt');
   let found = false;
-  let userIndex;
 
-  for (let i = 0; i <= userData.length; i++) {
-    try {
-      if (user === userData[i].user_name && pwd === userData[i].user_password) {
-        const token = utils.generateToken(userData[i]);
-        const userObj = utils.getCleanUser(userData[i]);
-        found = true;
-        userIndex = i;
-        return res.json({ user: userObj, token });
-      }
-    } catch (error) {
-      if (found === false) {
-        return res.status(401).json({
-          error: true,
-          message: 'Incorrect username or password.',
-        });
-      }
+  try{
+    var userObjects = Object.values(JSON.parse(JSON.stringify(userData)));
+    var userObject = (userObjects.find(element => element.user_name === user));
+    bcrypt.compare(pwd, userObject.user_password, function(err, hash){
+      if(!err){
+      const token = utils.generateToken(userObject);
+      const userObj = utils.getCleanUser(userObject);
+      found = true;
+      return res.json({ user: userObj, token });
+    }})
+    
+  }
+  catch (err) {
+    if (isEmpty(userObject)) {
+      return res.status(401).json({
+        err: true,
+        message: 'Incorrect username or password.',
+      });
     }
   }
+
 });
 
 app.post('/users/register', function (req, res) {
+  const bcrypt = require('bcrypt');
+  const saltRounds = 10;
   const user = req.body.username;
   const pwd = req.body.password;
-  const userID = userData.length + 1;
   const fname = req.body.fname;
   const lname = req.body.lname;
   const name = fname + ' ' + lname;
@@ -248,78 +254,7 @@ app.post('/users/register', function (req, res) {
   const zip = req.body.zip;
   const email = req.body.email;
   const phone = req.body.phone;
-
-  let found = false;
-  for (let i = 0; i <= userData.length; i++) {
-    try {
-      if (user === userData[i].user_name) {
-        found = true;
-      }
-    } catch (error) {
-      if (found === true) {
-        return res.status(401).json({
-          error: true,
-          message: 'Username has been taken.',
-        });
-      }
-    }
-  }
-  connection.query(
-    'INSERT INTO project_db.employee VALUES (' +
-      userID +
-      ', "' +
-      fname +
-      '" , "' +
-      lname +
-      '" , "' +
-      address +
-      '" , "' +
-      city +
-      '" , "' +
-      state +
-      '" , "' +
-      zip +
-      '" , "' +
-      email +
-      '" , "' +
-      phone +
-      '");'
-  ),
-    function (err, results) {
-      if (err) {
-        return res.status(401).json({
-          error: true,
-          message: 'Username has been taken.',
-        });
-      }
-    };
-  connection.query(
-    'INSERT INTO project_db.EmpUser VALUES (' +
-      userID +
-      ', "' +
-      user +
-      '" , "' +
-      name +
-      '" , "' +
-      pwd +
-      '", false);'
-  ),
-    function (err, results) {
-      if (err) {
-        throw err;
-      }
-    };
-  connection.query('SELECT * FROM project_db.empuser;', (err, results) => {
-    if (err) {
-      throw err;
-    } else {
-      userData = results; //update the user list on the backend server
-    }
-  });
-  return res.status(401).json({
-    error: false,
-    message: 'User created, return to login.',
-  });
+  
 });
 
 app.get('/verifyToken', function (req, res) {

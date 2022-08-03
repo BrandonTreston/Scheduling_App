@@ -59,12 +59,13 @@ function Login(props) {
             </>
           )}
           <br />
-          <button onTouchEnd={handleLogin} onClick={handleLogin}>
+          <div id='buttonContainer'>
+          <button className='loginButton' onTouchEnd={handleLogin} onClick={handleLogin}>
             {loading ? 'Loading...' : 'Login'}
           </button>
           <button onClick={() => window.location= '/#Bard'}>
           Back  
-          </button>
+          </button></div>
           <br />
         </div>
       </div>

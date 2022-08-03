@@ -48,9 +48,10 @@ function Editor() {
 
   return (
     <div>
-      <h4>Supervisor View</h4>
       <div className="editor">
         <div>
+        <h4>Schedule Editor</h4>
+        <br/>
         <h5>Schedule New Event</h5>
           <form id="addEvent">
             <label htmlFor="employee">Employee: </label>
@@ -62,16 +63,21 @@ function Editor() {
                 </option>
               ))}
             </select>
-            <br />
+            <div className='inputField'>
             <label htmlFor="dateselector">Start Date and Time: </label>
             <input type="datetime-local" {...start} id="startdateselector" />
-            <br />
+            </div>
+            <div className='inputField'>
             <label htmlFor="dateselector">End Date and Time: </label>
             <input type="datetime-local" {...end} id="enddateselector" />
-            <br />
+            </div>
+            <div className='inputField'>
             <label htmlFor="title">Description: </label>
             <input type="text" {...title} id="title" />
-            <br />
+            </div>
+            
+            
+            
             <button onClick={submit} id="submit">
               Submit
             </button>

@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Brandon_Icon.png';
 import Particles from 'react-particles-js';
+import Modal from '../Modal'
 
 function Home() {
   return (
@@ -65,7 +66,7 @@ function BodySection() {
 
 function FootSection(){
   return(
-        <span>Brandon Treston <strong>©2020</strong></span>
+        <span>Brandon Treston <strong>©2022</strong></span>
   );
 }
 
@@ -114,11 +115,6 @@ function Canvas() {
               enable: true,
               mode: 'repulse',
             },
-            onDiv: {
-              elementId: 'titleText',
-              mode: 'repulse',
-              enable: true,
-            },
           },
         },
       }}
@@ -139,19 +135,22 @@ function About() {
             <h3>Summary</h3>
           </strong>
           <p>
-            I'm a web developer and technologist based in NYC. I currently
-            attend New York Tech and will be graduating in December of 2020.
+            I'm a software engineer and technologist based in NYC. I graduated from New York Tech in December
+            2020 and am currently employed as a full stack engineer working primarily in Angular and Java.
           </p>
+          <br />
+          <p>Best way to reach me is email:</p>
+          <h5>brandon.treston98@gmail.com</h5>
         </div>
         <div>
           <h4>Skills</h4>
           <ul>
             <li>
-              <strong>Front-End: </strong>JavaScript (React, jQuery), Java,
+              <strong>Front-End: </strong>Angular, TypeScript, JavaScript, React, jQuery,
               HTML5, CSS3, Bootstrap
             </li>
             <li>
-              <strong>Back-End:</strong> Node.js, Express, SQL, MongoDB, Python,
+              <strong>Back-End:</strong>Java Spring Boot, Node.js, Express, SQL, MongoDB, Python,
               PHP
             </li>
             <li>

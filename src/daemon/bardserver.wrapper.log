@@ -2,3 +2,1351 @@
 2020-09-02 16:24:03 - Started 17016
 2020-09-02 16:25:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2020-09-02 16:25:15 - Started 8184
+2020-09-08 17:21:23 - Stopping bardserver.exe
+2020-09-08 17:21:23 - ProcessKill 8184
+2020-09-08 17:21:23 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-09-08 17:22:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-08 17:22:14 - Started 5152
+2020-09-12 20:51:58 - Stopping bardserver.exe
+2020-09-12 20:51:58 - ProcessKill 5152
+2020-09-12 20:51:58 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-09-12 20:53:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-09-12 20:53:09 - Started 4884
+2020-10-01 09:25:31 - Stopping bardserver.exe
+2020-10-01 09:25:31 - ProcessKill 4884
+2020-10-01 09:25:31 - Found child process: 4916 Name: conhost.exe
+2020-10-01 09:25:31 - Stopping process 4916
+2020-10-01 09:25:31 - Send SIGINT 4916
+2020-10-01 09:25:32 - SIGINT to 4916 failed - Killing as fallback
+2020-10-01 09:25:32 - Stopping process 4884
+2020-10-01 09:25:32 - Send SIGINT 4884
+2020-10-01 09:25:32 - SIGINT to 4884 failed - Killing as fallback
+2020-10-01 09:25:32 - Finished bardserver.exe
+2020-10-01 09:25:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-10-01 09:25:35 - Started 23344
+2020-10-14 10:20:27 - Stopping bardserver.exe
+2020-10-14 10:20:27 - ProcessKill 23344
+2020-10-14 10:20:27 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-10-14 10:21:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-10-14 10:21:40 - Started 5212
+2020-10-17 03:19:09 - Stopping bardserver.exe
+2020-10-17 03:19:09 - ProcessKill 5212
+2020-10-17 03:19:09 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-10-17 03:20:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-10-17 03:20:11 - Started 4772
+2020-11-03 16:34:05 - Stopping bardserver.exe
+2020-11-03 16:34:05 - ProcessKill 4772
+2020-11-03 16:34:05 - Found child process: 4800 Name: conhost.exe
+2020-11-03 16:34:05 - Stopping process 4800
+2020-11-03 16:34:05 - Send SIGINT 4800
+2020-11-03 16:34:05 - SIGINT to 4800 failed - Killing as fallback
+2020-11-03 16:34:05 - Stopping process 4772
+2020-11-03 16:34:05 - Send SIGINT 4772
+2020-11-03 16:34:05 - SIGINT to 4772 failed - Killing as fallback
+2020-11-03 16:34:05 - Finished bardserver.exe
+2020-11-03 16:34:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-03 16:34:06 - Started 3880
+2020-11-11 03:27:47 - Stopping bardserver.exe
+2020-11-11 03:27:47 - ProcessKill 3880
+2020-11-11 03:27:47 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-11-11 03:28:55 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-11 03:28:55 - Started 4224
+2020-11-17 16:21:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-17 16:21:32 - Started 20036
+2020-11-17 16:23:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-17 16:23:36 - Started 21032
+2020-11-17 17:00:30 - Stopping bardserver.exe
+2020-11-17 17:00:30 - ProcessKill 21032
+2020-11-17 17:00:30 - Found child process: 20524 Name: conhost.exe
+2020-11-17 17:00:30 - Found child process: 3312 Name: node.exe
+2020-11-17 17:00:30 - Stopping process 20524
+2020-11-17 17:00:30 - Send SIGINT 20524
+2020-11-17 17:00:30 - SIGINT to 20524 failed - Killing as fallback
+2020-11-17 17:00:31 - Stopping process 3312
+2020-11-17 17:00:31 - Send SIGINT 3312
+2020-11-17 17:00:31 - SIGINT to 3312 failed - Killing as fallback
+2020-11-17 17:00:31 - Stopping process 21032
+2020-11-17 17:00:31 - Send SIGINT 21032
+2020-11-17 17:00:31 - SIGINT to 21032 failed - Killing as fallback
+2020-11-17 17:00:31 - Finished bardserver.exe
+2020-11-17 17:00:55 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-17 17:00:55 - Started 18784
+2020-11-17 17:04:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-17 17:04:31 - Started 20452
+2020-11-24 13:51:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-24 13:51:22 - Started 5020
+2020-11-24 17:25:10 - Stopping bardserver.exe
+2020-11-24 17:25:10 - ProcessKill 5020
+2020-11-24 17:25:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-11-24 17:25:46 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-24 17:25:46 - Started 5268
+2020-11-27 05:06:14 - Stopping bardserver.exe
+2020-11-27 05:06:14 - ProcessKill 5268
+2020-11-27 05:06:14 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-11-27 05:07:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-27 05:07:16 - Started 5404
+2020-11-28 22:32:41 - Stopping bardserver.exe
+2020-11-28 22:32:41 - ProcessKill 5404
+2020-11-28 22:32:41 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-11-28 22:33:43 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-11-28 22:33:44 - Started 5364
+2020-12-09 04:30:35 - Stopping bardserver.exe
+2020-12-09 04:30:35 - ProcessKill 5364
+2020-12-09 04:30:35 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-12-09 04:31:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-09 04:31:48 - Started 5192
+2020-12-09 21:07:55 - Stopping bardserver.exe
+2020-12-09 21:07:55 - ProcessKill 5192
+2020-12-09 21:07:55 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-12-09 21:09:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-09 21:09:00 - Started 5288
+2020-12-16 17:40:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-16 17:40:32 - Started 5224
+2020-12-23 22:53:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-23 22:53:58 - Started 5344
+2020-12-24 20:06:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-24 20:06:04 - Started 5116
+2020-12-31 18:41:55 - Stopping bardserver.exe
+2020-12-31 18:41:55 - ProcessKill 5116
+2020-12-31 18:41:55 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2020-12-31 18:46:07 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2020-12-31 18:46:07 - Started 5576
+2021-01-14 10:45:49 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-14 10:45:49 - Started 3656
+2021-01-14 10:46:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-14 10:46:25 - Started 6004
+2021-01-14 10:46:50 - Stopping bardserver.exe
+2021-01-14 10:46:50 - ProcessKill 6004
+2021-01-14 10:46:50 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-14 10:47:26 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-14 10:47:26 - Started 6200
+2021-01-14 01:03:29 - Stopping bardserver.exe
+2021-01-14 01:03:29 - ProcessKill 6200
+2021-01-14 01:03:29 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-14 01:04:05 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-14 01:04:05 - Started 7336
+2021-01-14 20:00:16 - Stopping bardserver.exe
+2021-01-14 20:00:16 - ProcessKill 7336
+2021-01-14 20:00:16 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-14 20:00:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-14 20:00:48 - Started 7432
+2021-01-16 16:46:40 - Stopping bardserver.exe
+2021-01-16 16:46:40 - ProcessKill 7432
+2021-01-16 16:46:40 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-16 16:47:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-16 16:47:48 - Started 7292
+2021-01-19 19:56:16 - Stopping bardserver.exe
+2021-01-19 19:56:16 - ProcessKill 7292
+2021-01-19 19:56:16 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-19 19:56:52 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-19 19:56:52 - Started 6464
+2021-01-24 18:15:51 - Stopping bardserver.exe
+2021-01-24 18:15:51 - ProcessKill 6464
+2021-01-24 18:15:51 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-24 18:16:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-24 18:16:59 - Started 6292
+2021-01-26 10:13:35 - Stopping bardserver.exe
+2021-01-26 10:13:35 - ProcessKill 6292
+2021-01-26 10:13:35 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-26 10:14:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-26 10:14:31 - Started 6520
+2021-01-26 20:56:30 - Stopping bardserver.exe
+2021-01-26 20:56:30 - ProcessKill 6520
+2021-01-26 20:56:30 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-26 20:57:34 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-26 20:57:34 - Started 6432
+2021-01-27 20:00:06 - Stopping bardserver.exe
+2021-01-27 20:00:06 - ProcessKill 6432
+2021-01-27 20:00:06 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-27 20:01:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-27 20:01:11 - Started 6616
+2021-01-28 19:51:27 - Stopping bardserver.exe
+2021-01-28 19:51:27 - ProcessKill 6616
+2021-01-28 19:51:28 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-28 19:52:14 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-28 19:52:14 - Started 6536
+2021-01-29 08:15:10 - Stopping bardserver.exe
+2021-01-29 08:15:10 - ProcessKill 6536
+2021-01-29 08:15:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-01-29 08:16:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-29 08:16:06 - Started 6368
+2021-02-01 12:44:39 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-01 12:44:39 - Started 5548
+2021-02-01 17:19:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-01 17:19:22 - Started 6184
+2021-02-04 20:04:44 - Stopping bardserver.exe
+2021-02-04 20:04:44 - ProcessKill 6184
+2021-02-04 20:04:44 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-02-04 20:05:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-04 20:05:23 - Started 6344
+2021-02-08 16:27:19 - Stopping bardserver.exe
+2021-02-08 16:27:19 - ProcessKill 6344
+2021-02-08 16:27:19 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-02-08 16:28:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-08 16:28:00 - Started 6372
+2021-02-10 17:41:15 - Stopping bardserver.exe
+2021-02-10 17:41:15 - ProcessKill 6372
+2021-02-10 17:41:15 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-02-10 17:42:21 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-10 17:42:21 - Started 6136
+2021-02-18 17:36:56 - Stopping bardserver.exe
+2021-02-18 17:36:56 - ProcessKill 6136
+2021-02-18 17:36:57 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-02-18 17:37:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-18 17:37:40 - Started 6252
+2021-02-24 18:36:26 - Stopping bardserver.exe
+2021-02-24 18:36:26 - ProcessKill 6252
+2021-02-24 18:36:26 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-02-24 18:37:05 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-24 18:37:05 - Started 6184
+2021-03-07 14:10:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-07 14:10:47 - Started 5940
+2021-03-07 18:54:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-07 18:54:11 - Started 6096
+2021-03-10 04:55:34 - Stopping bardserver.exe
+2021-03-10 04:55:34 - ProcessKill 6096
+2021-03-10 04:55:34 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-03-10 04:56:44 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-10 04:56:44 - Started 6088
+2021-04-03 03:02:02 - Stopping bardserver.exe
+2021-04-03 03:02:02 - ProcessKill 6088
+2021-04-03 03:02:02 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-04-03 03:03:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-04-03 03:03:13 - Started 5788
+2021-04-13 09:39:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-04-13 09:39:27 - Started 5864
+2021-04-16 00:56:33 - Stopping bardserver.exe
+2021-04-16 00:56:33 - ProcessKill 5864
+2021-04-16 00:56:33 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-04-16 00:57:41 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-04-16 00:57:41 - Started 5848
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2021-04-20 19:29:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-04-20 19:29:25 - Started 5936
+2021-05-15 18:03:35 - Stopping bardserver.exe
+2021-05-15 18:03:35 - ProcessKill 5936
+2021-05-15 18:03:35 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-05-15 18:04:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-05-15 18:04:48 - Started 5916
+2021-05-30 00:59:15 - Stopping bardserver.exe
+2021-05-30 00:59:15 - ProcessKill 5916
+2021-05-30 00:59:15 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-05-30 01:00:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-05-30 01:00:25 - Started 5796
+2021-06-11 11:43:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-11 11:43:16 - Started 6168
+2021-06-19 22:10:35 - Stopping bardserver.exe
+2021-06-19 22:10:35 - ProcessKill 6168
+2021-06-19 22:10:35 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-06-19 22:11:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-19 22:11:47 - Started 6604
+2021-06-25 00:27:17 - Stopping bardserver.exe
+2021-06-25 00:27:17 - ProcessKill 6604
+2021-06-25 00:27:17 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-06-25 00:28:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-25 00:28:23 - Started 6132
+2021-06-30 21:04:45 - Stopping bardserver.exe
+2021-06-30 21:04:45 - ProcessKill 6132
+2021-06-30 21:04:45 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-06-30 21:05:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-30 21:05:28 - Started 6392
+2021-07-07 03:26:36 - Stopping bardserver.exe
+2021-07-07 03:26:36 - ProcessKill 6392
+2021-07-07 03:26:36 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-07-07 03:27:44 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-07-07 03:27:44 - Started 6120
+2021-07-15 19:40:14 - Stopping bardserver.exe
+2021-07-15 19:40:14 - ProcessKill 6120
+2021-07-15 19:40:15 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-07-15 19:41:26 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-07-15 19:41:26 - Started 6232
+2021-07-20 18:29:40 - Stopping bardserver.exe
+2021-07-20 18:29:40 - ProcessKill 6232
+2021-07-20 18:29:41 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-07-20 18:30:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-07-20 18:30:30 - Started 6496
+2021-08-03 23:56:10 - Stopping bardserver.exe
+2021-08-03 23:56:10 - ProcessKill 6496
+2021-08-03 23:56:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-08-03 23:57:21 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-03 23:57:21 - Started 6044
+2021-08-03 23:57:39 - Stopping bardserver.exe
+2021-08-03 23:57:39 - ProcessKill 6044
+2021-08-03 23:57:39 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-08-04 18:44:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-04 18:44:20 - Started 6828
+2021-08-17 00:56:31 - Stopping bardserver.exe
+2021-08-17 00:56:31 - ProcessKill 6828
+2021-08-17 00:56:31 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-08-17 00:57:43 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-17 00:57:43 - Started 6104
+2021-08-17 00:58:09 - Stopping bardserver.exe
+2021-08-17 00:58:09 - ProcessKill 6104
+2021-08-17 00:58:09 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-08-17 18:07:33 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-08-17 18:07:33 - Started 6488
+2021-09-06 21:00:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-06 21:00:28 - Started 6184
+2021-09-11 00:36:12 - Stopping bardserver.exe
+2021-09-11 00:36:13 - ProcessKill 6184
+2021-09-11 00:36:13 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-09-11 00:37:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-11 00:37:20 - Started 6240
+2021-09-16 02:30:47 - Stopping bardserver.exe
+2021-09-16 02:30:47 - ProcessKill 6240
+2021-09-16 02:30:47 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-09-16 02:32:02 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-16 02:32:02 - Started 4368
+2021-09-22 18:55:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-22 18:55:48 - Started 6120
+2021-09-27 23:03:59 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-27 23:03:59 - Started 6020
+2021-09-29 22:34:47 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-29 22:34:47 - Started 6000
+2021-09-29 22:35:11 - Stopping bardserver.exe
+2021-09-29 22:35:11 - ProcessKill 6000
+2021-09-29 22:35:12 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-09-29 22:40:46 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-29 22:40:46 - Started 6184
+2021-09-29 22:57:09 - Stopping bardserver.exe
+2021-09-29 22:57:09 - ProcessKill 6184
+2021-09-29 22:57:09 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-09-29 22:59:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-09-29 22:59:04 - Started 6520
+2021-10-12 19:30:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-12 19:30:10 - Started 6456
+2021-10-16 21:47:54 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-16 21:47:54 - Started 5752
+2021-10-16 21:47:55 - Stopping bardserver.exe
+2021-10-16 21:47:55 - ProcessKill 5752
+2021-10-16 21:47:55 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-10-16 21:49:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-16 21:49:04 - Started 5864
+2021-10-16 21:49:34 - Stopping bardserver.exe
+2021-10-16 21:49:34 - ProcessKill 5864
+2021-10-16 21:49:34 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-10-16 21:50:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-16 21:50:42 - Started 5964
+2021-10-21 18:39:39 - Stopping bardserver.exe
+2021-10-21 18:39:39 - ProcessKill 5964
+2021-10-21 18:39:40 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-10-21 18:40:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-10-21 18:40:23 - Started 6560
+2021-11-08 18:24:02 - Stopping bardserver.exe
+2021-11-08 18:24:03 - ProcessKill 6560
+2021-11-08 18:24:03 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-08 18:24:44 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-08 18:24:44 - Started 6300
+2021-11-10 00:32:36 - Stopping bardserver.exe
+2021-11-10 00:32:36 - ProcessKill 6300
+2021-11-10 00:32:36 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-10 00:33:43 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-10 00:33:43 - Started 6152
+2021-11-10 00:34:10 - Stopping bardserver.exe
+2021-11-10 00:34:10 - ProcessKill 6152
+2021-11-10 00:34:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-10 18:47:58 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-10 18:47:58 - Started 6512
+2021-11-22 18:55:40 - Stopping bardserver.exe
+2021-11-22 18:55:40 - ProcessKill 6512
+2021-11-22 18:55:40 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-22 18:56:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-22 18:56:24 - Started 7136
+2021-11-24 10:44:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-24 10:44:35 - Started 6016
+2021-11-30 02:24:12 - Stopping bardserver.exe
+2021-11-30 02:24:12 - ProcessKill 6016
+2021-11-30 02:24:12 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-11-30 02:25:19 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-11-30 02:25:19 - Started 6296
+2021-12-05 01:51:20 - Stopping bardserver.exe
+2021-12-05 01:51:20 - ProcessKill 6296
+2021-12-05 01:51:20 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-05 01:52:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-05 01:52:25 - Started 6132
+2021-12-14 18:40:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-14 18:40:12 - Started 6148
+2021-12-17 03:45:38 - Stopping bardserver.exe
+2021-12-17 03:45:38 - ProcessKill 6148
+2021-12-17 03:45:38 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-12-17 03:46:45 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-12-17 03:46:45 - Started 6196
+2022-01-19 21:48:58 - Stopping bardserver.exe
+2022-01-19 21:48:58 - Finished bardserver.exe
+2022-01-19 21:49:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-19 21:49:41 - Started 6556
+2022-01-25 18:15:09 - Stopping bardserver.exe
+2022-01-25 18:15:09 - ProcessKill 6556
+2022-01-25 18:15:09 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-01-25 18:15:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-25 18:15:48 - Started 6432
+2022-01-27 23:01:10 - Stopping bardserver.exe
+2022-01-27 23:01:10 - ProcessKill 6432
+2022-01-27 23:01:10 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-01-27 23:01:54 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-27 23:01:54 - Started 6492
+2022-01-29 20:57:02 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-01-29 20:57:02 - Started 6184
+2022-02-09 21:37:12 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-02-09 21:37:12 - Started 6204
+2022-03-02 20:27:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-02 20:27:24 - Started 6172
+2022-03-03 20:36:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-03 20:36:04 - Started 6176
+2022-03-04 00:12:47 - Stopping bardserver.exe
+2022-03-04 00:12:47 - ProcessKill 6176
+2022-03-04 00:12:47 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-03-04 00:13:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-04 00:13:24 - Started 6188
+2022-03-04 17:44:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-04 17:44:15 - Started 5980
+2022-03-16 19:22:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-16 19:22:53 - Started 5980
+2022-03-18 00:49:52 - Stopping bardserver.exe
+2022-03-18 00:49:52 - ProcessKill 5980
+2022-03-18 00:49:52 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-03-18 00:50:31 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-18 00:50:31 - Started 6432
+2022-03-22 22:46:37 - Stopping bardserver.exe
+2022-03-22 22:46:37 - ProcessKill 6432
+2022-03-22 22:46:38 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-03-22 22:47:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-03-22 22:47:15 - Started 6556
+                                                                                                                                                                                                                                                                                                                                                                                            2022-04-05 20:09:05 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-05 20:09:05 - Started 6436
+2022-04-15 00:34:44 - Stopping bardserver.exe
+2022-04-15 00:34:44 - ProcessKill 6436
+2022-04-15 00:34:44 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-04-15 00:35:56 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-15 00:35:56 - Started 6348
+2022-04-16 00:29:15 - Stopping bardserver.exe
+2022-04-16 00:29:15 - ProcessKill 6348
+2022-04-16 00:29:15 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-04-16 00:30:21 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-16 00:30:21 - Started 6196
+2022-04-29 01:28:49 - Stopping bardserver.exe
+2022-04-29 01:28:49 - ProcessKill 6196
+2022-04-29 01:28:49 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-04-29 01:30:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-29 01:30:01 - Started 6592
+2022-05-07 14:29:49 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-07 14:29:49 - Started 6516
+2022-05-09 00:20:34 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-09 00:20:34 - Started 6488
+2022-05-12 23:04:11 - Stopping bardserver.exe
+2022-05-12 23:04:11 - ProcessKill 6488
+2022-05-12 23:04:11 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-05-12 23:05:21 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-12 23:05:21 - Started 6972
+2022-05-12 23:06:21 - Stopping bardserver.exe
+2022-05-12 23:06:21 - ProcessKill 6972
+2022-05-12 23:06:21 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-05-13 17:18:04 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-13 17:18:04 - Started 7664
+2022-05-17 19:30:05 - Stopping bardserver.exe
+2022-05-17 19:30:05 - ProcessKill 7664
+2022-05-17 19:30:06 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-05-17 19:31:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-17 19:31:00 - Started 6672
+2022-05-22 13:06:45 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-22 13:06:45 - Started 6452
+2022-06-09 10:05:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-09 10:05:40 - Started 7020
+2022-06-15 01:14:51 - Stopping bardserver.exe
+2022-06-15 01:14:51 - ProcessKill 7020
+2022-06-15 01:14:51 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-15 01:16:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-15 01:16:01 - Started 6296
+2022-06-15 01:16:59 - Stopping bardserver.exe
+2022-06-15 01:16:59 - ProcessKill 6296
+2022-06-15 01:16:59 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-15 19:18:45 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-15 19:18:45 - Started 7072
+2022-06-24 18:12:41 - Stopping bardserver.exe
+2022-06-24 18:12:41 - ProcessKill 7072
+2022-06-24 18:12:42 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-24 18:13:44 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-24 18:13:44 - Started 6728
+2022-06-24 18:24:01 - Stopping bardserver.exe
+2022-06-24 18:24:01 - ProcessKill 6728
+2022-06-24 18:24:01 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-24 18:24:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-24 18:24:42 - Started 6868
+2022-06-27 19:09:06 - Stopping bardserver.exe
+2022-06-27 19:09:06 - ProcessKill 6868
+2022-06-27 19:09:06 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-27 19:09:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-27 19:09:48 - Started 6944
+2022-06-27 19:10:24 - Stopping bardserver.exe
+2022-06-27 19:10:24 - ProcessKill 6944
+2022-06-27 19:10:24 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-27 19:11:09 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-27 19:11:09 - Started 6648
+2022-07-05 22:13:18 - Stopping bardserver.exe
+2022-07-05 22:13:18 - ProcessKill 6648
+2022-07-05 22:13:18 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-07-05 22:14:17 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-05 22:14:17 - Started 6484
+2022-07-15 01:30:11 - Stopping bardserver.exe
+2022-07-15 01:30:11 - ProcessKill 6484
+2022-07-15 01:30:11 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-07-15 01:31:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-15 01:31:27 - Started 6528
+2022-07-15 09:58:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-15 09:58:24 - Started 6520
+2022-07-28 12:40:20 - Stopping bardserver.exe
+2022-07-28 12:40:20 - ProcessKill 6520
+2022-07-28 12:40:20 - Found child process: 6560 Name: conhost.exe
+2022-07-28 12:40:20 - Found child process: 24540 Name: node.exe
+2022-07-28 12:40:20 - Stopping process 6560
+2022-07-28 12:40:20 - Send SIGINT 6560
+2022-07-28 12:40:20 - SIGINT to 6560 failed - Killing as fallback
+2022-07-28 12:40:20 - Stopping process 24540
+2022-07-28 12:40:20 - Send SIGINT 24540
+2022-07-28 12:40:20 - SIGINT to 24540 failed - Killing as fallback
+2022-07-28 12:40:20 - Stopping process 6520
+2022-07-28 12:40:20 - Send SIGINT 6520
+2022-07-28 12:40:20 - SIGINT to 6520 failed - Killing as fallback
+2022-07-28 12:40:20 - Finished bardserver.exe
+2022-07-28 12:40:21 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-07-28 12:40:21 - Started 39176
+2022-08-03 01:15:18 - Stopping bardserver.exe
+2022-08-03 01:15:18 - ProcessKill 39176
+2022-08-03 01:15:18 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-08-03 11:07:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\brand\Documents\Scheduling_App\node_modules\node-windows\lib\wrapper.js --file C:\Users\brand\Documents\Scheduling_App\src\server.js --scriptoptions= --log "BardServer wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-03 11:07:25 - Started 6800

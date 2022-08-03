@@ -3,14 +3,17 @@
     justify-content: center;
   }
   #registerform {
-    background-color: #2a2a30;
+  background-color: #242220;
     padding: 20px;
   }
+  #registerform h4{
+  text-align: center
+}
   #register input {
-    background-color: #181a1b;
+    background-color: #00000000;
     border: inset #656c6e;
     color: #fff;
-    margin: 5px 0;
+    border: 1px solid #929292;
   }
   button {
     margin-right: 10px;
@@ -19,4 +22,13 @@
     text-decoration: none;
     color: black;
   }
-  
+  .registerButton{
+  background-color: #242220;
+  color: #929292;
+  border: 1px solid #929292;
+  letter-spacing: 3px;
+}
+  #buttonContainer{
+  display:flex;
+  justify-content: space-evenly;
+}
